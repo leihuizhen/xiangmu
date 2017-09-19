@@ -48,6 +48,7 @@ Vue.filter('dateFmt', (input, formatString) => {
 Vue.use(VueRouter)
 
 //导入组件
+import activityList from './components/activityList/activityList.vue'
 import home from './components/home/home.vue'
 import housingResources from './components/housingResources/housingResources.vue'
 import mine from './components/mine/mine.vue'
@@ -64,7 +65,8 @@ import myCollection from './components/myCollection/myCollection.vue'
 //创建并且配置好路由
 const vueRouter = new VueRouter({
 	routes : [
-		{name:'/',path:'/',redirect:'home'},
+		{name:'/',path:'/',redirect:'activityList',meta: {title: '活动列表'}},
+		{name:'activityList',path:'/activityList',component:activityList, meta: {title: '活动列表'}},
 		{name:'home',path:'/home',component:home, meta: {title: '在线开盘'}},
 		{name:'housingResources',path:'/housingResources',component:housingResources,meta: {title: '房源列表'}},
 		{name:'myCollection',path:'/myCollection',component:myCollection,meta: {title: '我的收藏'}},
