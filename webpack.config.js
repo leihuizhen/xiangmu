@@ -25,6 +25,11 @@ module.exports = {
                 loader: 'style-loader!css-loader'
             },
             {
+            	test: /\.less$/,
+            	loader: "style-loader!css-loader!less-loader",
+
+            },
+            {
                 test: /\.(png|ttf|gif|svg|jpg)$/,
                 loader: 'url-loader?limit=4000'
             },
