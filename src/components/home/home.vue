@@ -28,6 +28,7 @@
      </div>
      <!--开盘时间-->
      <ul class="mui-table-view openTime" >
+     	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
          <li class="mui-table-view-cell mui-media">
                     开盘时间
           </li>
@@ -56,23 +57,25 @@
      </ul>
       <!--楼盘相册-->
       <ul class="mui-table-view openTime" >
+      	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
          <li class="mui-table-view-cell mui-media">
          	<div style="float: left;">楼盘相册</div>
              <div class="totlePic ">全部图片<span class="mui-icon mui-icon-arrowright"></span></div>      
           </li>
-          <li class="mui-table-view-cell mui-media">
+          <li class="mui-table-view-cell mui-media" style="overflow-x: auto; width: 100%;">
           <div class="mui-slider">
-            <div class="mui-slider-group">
-           <div class="mui-slider-item"><a href="#"><img src="../../../statics/images/74712542120528983.png" /></a></div>
-            <div class="mui-slider-item"><a href="#"><img src="../../../statics/images/74712542120528983.png" /></a></div>
-          <div class="mui-slider-item"><a href="#"><img src="../../../statics/images/74712542120528983.png" /></a></div>
-          <div class="mui-slider-item"><a href="#"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+            <div class="mui-slider-group" style="width: 800px;" >
+           <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+            <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+          <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+          <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
          </div>
 </div>
           </li>
      </ul>
       <!--活动细则-->
      <ul class="mui-table-view openTime" >
+     	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
          <li class="mui-table-view-cell mui-media">
                    活动细则
           </li>
@@ -85,7 +88,7 @@
           	</div>
           </li>
      </ul>
-         <router-link class="mui-btn mui-btn-danger ImmediatelyPanicBuying" to="/housingResources">
+         <router-link class="mui-btn mui-btn-danger ImmediatelyPanicBuying" to="/qualificationExamination">
            <span class="mui-tab-label">立即抢购</span>
          </router-link>
     </div>
@@ -117,7 +120,6 @@
 	}
 	/*开盘时间*/
 	.openTime{
-		margin-top: 20/75rem;
 		font-weight: 600;
 		font-size: 30/75rem;
 		color: #333333;
@@ -166,10 +168,14 @@
 	.mui-slider .mui-slider-group .mui-slider-item img{
 		height: 100%;
 	}
+	.mui-slider{
+		overflow: auto;
+	}
 </style>
 
 <script>
 //  //导入common.js
+ 
 //  import common from '../../tools/common.js'
 //
 //  //1.0 导入图片轮播子组件

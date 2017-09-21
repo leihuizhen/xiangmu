@@ -53,6 +53,7 @@ import home from './components/home/home.vue'
 import housingResources from './components/housingResources/housingResources.vue'
 import mine from './components/mine/mine.vue'
 import myCollection from './components/myCollection/myCollection.vue'
+import qualificationExamination from './components/home/qualificationExamination.vue'
 //import newslist from './components/news/newslist.vue'
 //import newsinfo from './components/news/newsinfo.vue'
 //import photolist from './components/photo/photolist.vue'
@@ -71,6 +72,7 @@ const vueRouter = new VueRouter({
 		{name:'housingResources',path:'/housingResources',component:housingResources,meta: {title: '房源列表'}},
 		{name:'myCollection',path:'/myCollection',component:myCollection,meta: {title: '我的收藏'}},
 		{name:'mine',path:'/mine',component:mine,meta: {title: '我的'}},
+		{name:'qualificationExamination',path:'/qualificationExamination',component:qualificationExamination,meta: {title: '资格审核'}},
 //		{name:'newslist',path:'/news/list',component:newslist},
 //		{name:'newsinfo',path:'/news/info/:newsId',component:newsinfo},
 //		{name:'photolist',path:'/photo/list',component:photolist},

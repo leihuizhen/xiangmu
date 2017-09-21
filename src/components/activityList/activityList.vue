@@ -5,6 +5,7 @@
 		</div>
    <div class="mui-card" >
 	<!--内容区-->
+	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
 	<div class="mui-card-content" style="height:160px;">
 		<img style="width: 100%;height: 100%;" src="../../../statics/images/activity.jpg"/>
     </div>
@@ -24,6 +25,7 @@
     </div>
  <div class="mui-card" >
 	<!--内容区-->
+	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
 	<div class="mui-card-content" style="height:160px;">
 		<img style="width: 100%;height: 100%;" src="../../../statics/images/activity.jpg"/>
     </div>
@@ -43,6 +45,7 @@
     </div>
      <div class="mui-card" >
 	<!--内容区-->
+	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
 	<div class="mui-card-content" style="height:160px;">
 		<img style="width: 100%;height: 100%;" src="../../../statics/images/activity.jpg"/>
     </div>
@@ -77,7 +80,6 @@
 	}
 	.mui-card{
 		margin: 0px;
-		margin-top: 20/75rem;
 	}
 	.activeText{
 		display: flex;display: -webkit-flex;
