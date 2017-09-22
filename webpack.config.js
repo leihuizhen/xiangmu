@@ -16,6 +16,10 @@ module.exports = {
     module: {
         //加载器配置
         loaders:[
+        {
+    test: /vue-preview.src.*?js$/,
+    loader: 'babel-loader'
+},
             {
                 test:/\.vue$/,
                 loader:'vue-loader'

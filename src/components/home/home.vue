@@ -60,15 +60,16 @@
       	<div style="width: 100%;height: 10px;background: #f5f5f5;"></div>
          <li class="mui-table-view-cell mui-media">
          	<div style="float: left;">楼盘相册</div>
-             <div class="totlePic ">全部图片<span class="mui-icon mui-icon-arrowright"></span></div>      
+             <div class="totlePic " @click="$preview.open(0, list)">全部图片<span class="mui-icon mui-icon-arrowright"></span></div>      
           </li>
           <li class="mui-table-view-cell mui-media" style="overflow-x: auto; width: 100%;">
           <div class="mui-slider">
             <div class="mui-slider-group" style="width: 800px;" >
-           <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+            	<img class="preview-img" v-for="(item, index) in list" :src="item.src" height="150" @click="$preview.open(index, list)">
+           <!--<div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
             <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
           <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
-          <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>
+          <div class="mui-slider-item"><a href="javascript:void(0);"><img src="../../../statics/images/74712542120528983.png" /></a></div>-->
          </div>
 </div>
           </li>
@@ -187,7 +188,27 @@
         data(){
             return {
 //              imageList: []
-            }
+             list: [{
+          src: '../../../statics/images/74712542120528983.png',
+          w: 600,
+          h: 400
+        }, {
+          src: '../../../statics/images/74712542120528983.png',
+          w: 600,
+          h: 400
+        },
+        {
+          src: '../../../statics/images/74712542120528983.png',
+          w: 600,
+          h: 400
+        }, {
+          src: '../../../statics/images/74712542120528983.png',
+          w: 600,
+          h: 400
+        }
+        ]
+           }
+           
         },
         created(){//页面初始化完毕
 //          console.log('home created');
